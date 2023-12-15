@@ -14,12 +14,6 @@ TableViewReader tvr = new TableViewReader {
 };
 
 tvr.ExecuteRead();
-var cols = new string[] {
-    "FFname", "Lines", "TotAmt", "CurDate", "InvoiceNbr",
-    "InvDate", "ItemNbr", "Quantity", "UnitPrice", "ItemSalesAmt"
-};
-var recordList = tvr.TextOutput(cols);
 
-foreach(var record in recordList) {
-    Console.WriteLine($"{record}");
-}
+tvr.TextOutput();
+

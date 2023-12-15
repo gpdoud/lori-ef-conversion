@@ -16,6 +16,10 @@
 
   <ItemGroup>
     <PackageReference Include="microsoft.data.sqlclient" Version="5.1.2" />
+    <PackageReference Include="microsoft.entityframeworkcore.design" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
